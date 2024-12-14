@@ -4,7 +4,7 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 
 
 ## Resources :
-#### 📘 Articles
+#### 📘 Articles :
  - [Born2beRoot (Full guide)](https://mathieu-soysal.gitbook.io/born2beroot)
  - [Gitbook Guide](https://42-cursus.gitbook.io/guide/rank-01/born2beroot)
  - [Born2beRoot Ultimate Guide](https://github.com/DevAwizard/Born2BeRoot_Guide_by_anwu-yan)
@@ -14,7 +14,7 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
  - [Born2beRoot Concepts](https://github.com/ila36IX/Notes/blob/cc6ad69c42dba5585de73445b2b3876eac26c7de/born2beroot/helloroot.md#L241-L295)
  - [What is ?](https://github.com/amaitou/Born2beRoot)
  - [What is 2 ?](https://github.com/Thuggonaut/42IC_Ring01_Born2beRoot/)
-#### 💻 Videos
+#### 💻 Videos :
 - [Linux Directories Explained in 100 Seconds](https://www.youtube.com/watch?v=42iQKuQodW4)
 - [Linux File System](https://www.youtube.com/watch?v=A3G-3hp88mo)
 - [Virtualization (Part 1): Hypervisors & VMs](https://www.youtube.com/watch?v=a75fC8xnBn8)
