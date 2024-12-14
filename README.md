@@ -2,13 +2,9 @@
 
 This project's goal is to help you set up your `Virtual Machine` under specific instructions to get you close and close to know more about to world of virtualization.
 
-## Instructions :
 
-soon ...
-
----
 ## Resources :
-#### 📘 Articles :
+#### 📘 Articles
  - [Born2beRoot (Full guide)](https://mathieu-soysal.gitbook.io/born2beroot)
  - [Gitbook Guide](https://42-cursus.gitbook.io/guide/rank-01/born2beroot)
  - [Born2beRoot Ultimate Guide](https://github.com/DevAwizard/Born2BeRoot_Guide_by_anwu-yan)
@@ -18,7 +14,7 @@ soon ...
  - [Born2beRoot Concepts](https://github.com/ila36IX/Notes/blob/cc6ad69c42dba5585de73445b2b3876eac26c7de/born2beroot/helloroot.md#L241-L295)
  - [What is ?](https://github.com/amaitou/Born2beRoot)
  - [What is 2 ?](https://github.com/Thuggonaut/42IC_Ring01_Born2beRoot/)
-#### 💻 Videos :
+#### 💻 Videos
 - [Linux Directories Explained in 100 Seconds](https://www.youtube.com/watch?v=42iQKuQodW4)
 - [Linux File System](https://www.youtube.com/watch?v=A3G-3hp88mo)
 - [Virtualization (Part 1): Hypervisors & VMs](https://www.youtube.com/watch?v=a75fC8xnBn8)
@@ -39,34 +35,49 @@ soon ...
 - **Type2** : which is installed on top of your operating system
 ---
 #### 🔷 What's the difference between Debian and Rocky? and If you choose one on another explain why?
-- soon ...
+-
 ---
 #### 🔷 What's a partition ? And more generally how does LVM (Logical Volume Management) work ?
 - **Partition** is a logically divided section of a physical storage device 
 
-- **LVM (Logical Volume Manager)** is a software-based system in Linux for **managing disk storage dynamically**. **LVM** is built into Linux
+* **LVM (Logical Volume Manager)** is a software-based system in Linux for **managing disk storage dynamically**. **LVM** is built into Linux.
+
+    - **Physical Volumes (PVs):**
+        > These are raw storage devices (e.g., /dev/sda1).
+        > LVM uses them as building blocks.
+
+    - **Volume Groups (VGs):**
+        > A pool of storage created by combining one or more physical volumes. 
+        > 
+        > Example: Combine a 500GB and a 1TB disk into a single 1.5TB volume group.
+
+    - **Logical Volumes (LVs):**
+        > Flexible, virtual partitions carved out of a Volume Group.
+        >
+        > Example: Create an LV for /, another for /home, and one for swap.
+        > Logical volumes can be resized, moved, or combined dynamically.
 
 - With **LVM**, adding a new disk is easy, and the storage is managed as a unified pool. Logical Volumes can grow without needing to repartition or move data manually. Applications and users don’t notice any changes.
 
 - With **Manual partitioning**, each new disk requires extra effort to partition, format, and mount. It often leads to fragmented storage, with data scattered across multiple locations, making management more complex as the system grows.
 ---
 #### 🔷 What's the advantages/disadvantages of a strong password policy ? What can you say about its implementation ?
-- soon ...
+-
 ---
 #### 🔷 What's sudo ?
-- soon ...
+-
 ---
 #### 🔷 What's an UFW (Uncomplicated Firewall) and what's the value of using it ?
-- soon ...
+-
 ---
 #### 🔷 What's APPArmor ?
-- soon ...
+-
 ---
 #### 🔷 What's SSH (Secure Shell) and what's the value of using it ?
-- soon ...
+-
 ---
 #### 🔷 Hypervisor ?
-- soon ...
+-
 ---
 
 
