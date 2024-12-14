@@ -35,7 +35,7 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 - **Type2** : which is installed on top of your operating system
 ---
 #### 🔷 What's the difference between Debian and Rocky? and If you choose one on another explain why?
--
+- soon ...
 ---
 #### 🔷 What's a partition ? And more generally how does LVM (Logical Volume Management) work ?
 - **Partition** is a logically divided section of a physical storage device 
@@ -47,22 +47,22 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 - With **Manual partitioning**, each new disk requires extra effort to partition, format, and mount. It often leads to fragmented storage, with data scattered across multiple locations, making management more complex as the system grows.
 ---
 #### 🔷 What's the advantages/disadvantages of a strong password policy ? What can you say about its implementation ?
--
+- soon ...
 ---
 #### 🔷 What's sudo ?
--
+- soon ...
 ---
 #### 🔷 What's an UFW (Uncomplicated Firewall) and what's the value of using it ?
--
+- soon ...
 ---
 #### 🔷 What's APPArmor ?
--
+- soon ...
 ---
 #### 🔷 What's SSH (Secure Shell) and what's the value of using it ?
--
+- soon ...
 ---
 #### 🔷 Hypervisor ?
--
+- soon ...
 ---
 
 
