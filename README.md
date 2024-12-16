@@ -21,7 +21,7 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 - [Virtualization (Part 2): How hypervisors work](https://www.youtube.com/watch?v=L0IDOQneyRE)
 - [Virtualization in Arabic](https://www.youtube.com/watch?v=3HChgNmRYJU)
 - [Introduction to LVM | Linux Academy](https://www.youtube.com/watch?v=dMHFArkANP8&list=PLAoA-usw1t-4sIlwNXKS2RIn0ZBx4VQhn)
-- [Born2beRoot : Installation and partitioning](https://www.youtube.com/watch?v=3HChgNmRYJU)
+- [Born2beRoot : Installation and partitioning](https://www.youtube.com/watch?v=73r3JbkCVy0)
 ## ⚠️ Need to know :
 
 #### 🔷 How does a virtual machine work ? And what its purpose ?
