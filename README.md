@@ -100,76 +100,75 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 ---
 #### 2. Installing sudo using apt
 
-    ```sh
-    imellali@imellali42:~$ su
-    root@imellali42:/home/imellali# apt install sudo
-    root@imellali42:/home/imellali# apt install vim
-    ```
-    
-    if sudo not working :
+```sh
+imellali@imellali42:~$ su
+root@imellali42:/home/imellali# apt install sudo
+root@imellali42:/home/imellali# apt install vim
+```
 
-    ```sh
-    root@imellali42:/home/imellali# vi /etc/sudoers
-    
-    then and add this to sudoers file :
-    
-    "your user" ALL=(ALL) ALL
-    
-    example :
-    
-    imellali ALL=(ALL) ALL
-    
-    then save and quit , and quit su then try sudo again
-    ```
+if sudo not working :
+
+```sh
+root@imellali42:/home/imellali# vi /etc/sudoers
+```
+> then and add this to sudoers file :
+
+```sh
+"your user" ALL=(ALL) ALL
+
+example :
+
+imellali ALL=(ALL) ALL
+
+then save and quit , and quit su then try sudo again
+```
 ---
 #### 3. Installing & Configuring SSH
     
-    > To install ssh  :
+> To install ssh  :
 
-    ```sh
-    sudo apt install openssh-server
-    sudo systemctl status ssh (to check if ssh is active)
-    ```
-    
-    > To edit port to 4242  :
+```sh
+sudo apt install openssh-server
+sudo systemctl status ssh (to check if ssh is active)
+```
+> To edit port to 4242  :
 
-    ```sh
-    sudo vi /etc/ssh/sshd_config
-    port 4242 (edit this)
-    ```
+```sh
+sudo vi /etc/ssh/sshd_config
+port 4242 (edit this)
+```
+> To make the connection not as a root :
 
-    > To make the connection not as a root :
-
-    ```sh
-    sudo vi /etc/ssh/sshd_config
-    PermitRootLogin no (edit this)
-    ```
+```sh
+sudo vi /etc/ssh/sshd_config
+PermitRootLogin no (edit this)
+```
 ---   
 #### 4. Installing & Configuring UFW
     
-    > To install UFW :
+> To install UFW :
 
-    ```sh
-    sudo apt install ufw
-    sudo ufw version (to check if UFW installed)
-    sudo ufw enable (to unable UFW)
-    ```
-    
-    > To allow SSH connection :
+```sh
+sudo apt install ufw
+sudo ufw version (to check if UFW installed)
+sudo ufw enable (to unable UFW)
+```
 
-    ```sh
-    sudo ufw allow ssh
-    ```
+> To allow SSH connection :
 
-    > To configure UFW with port 4242 :
+```sh
+sudo ufw allow ssh
+```
 
-    ```sh
-    sudo ufw status numbered
-    sudo ufw delete 1 (to remove port 22)
-    sudo ufw delete 2 (to remove port 22/v6)
-    sudo ufw allow 4242
-    sudo ufw status (check if only port 4242 is there)
-    ```
+> To configure UFW with port 4242 :
+
+```sh
+sudo ufw status numbered
+sudo ufw delete 1 (to remove port 22)
+sudo ufw delete 2 (to remove port 22/v6)
+sudo ufw allow 4242
+sudo ufw status (check if only port 4242 is there)
+```
 ---   
 #### 5. Create a new user and assign it to a group
 ---
