@@ -83,8 +83,8 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 ## 📋 Instructions :
 
 #### 1. Create Virtual Machine with VirtualBox
-    Your hostname must be your “login” + 42 (ex: imellali42)
-    You must create at least 2 encrypted partitions using LVM :
+> **Your hostname must be your “login” + 42 (ex: imellali42)**
+> **You must create at least 2 encrypted partitions using LVM :**
 
 ```sh
 0. boot
@@ -96,7 +96,7 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 6. tmp (bonus part)
 7. var/log (bonus part)
 ```
-    You must install GRUB Boot loader in your disk !
+> **You must install GRUB Boot loader in your disk !**
 ---
 #### 2. Installing sudo using apt
 
@@ -106,22 +106,22 @@ root@imellali42:/home/imellali# apt install sudo
 root@imellali42:/home/imellali# apt install vim
 ```
 
-> if sudo not working :
+> **if sudo not working :**
 
 ```sh
 root@imellali42:/home/imellali# vi /etc/sudoers
 ```
-> then and add this to sudoers file :
+> **then and add this to sudoers file :**
 
 ```sh
 "your user" ALL=(ALL) ALL
 ```
 
-> example :
+> **example :**
 ```sh
 imellali ALL=(ALL) ALL
 ```
-> then save and quit , and quit su then try sudo again
+> **then save and quit , and quit su then try sudo again**
 
 ---
 #### 3. Installing & Configuring SSH
@@ -132,13 +132,13 @@ imellali ALL=(ALL) ALL
 sudo apt install openssh-server
 sudo systemctl status ssh (to check if ssh is active)
 ```
-> To edit port to 4242  :
+> **To edit port to 4242  :**
 
 ```sh
 sudo vi /etc/ssh/sshd_config
 port 4242 (edit this)
 ```
-> To make the connection not as a root :
+> **To make the connection not as a root :**
 
 ```sh
 sudo vi /etc/ssh/sshd_config
@@ -147,7 +147,7 @@ PermitRootLogin no (edit this)
 ---   
 #### 4. Installing & Configuring UFW
     
-> To install UFW :
+> **To install UFW :**
 
 ```sh
 sudo apt install ufw
@@ -155,13 +155,13 @@ sudo ufw version (to check if UFW installed)
 sudo ufw enable (to unable UFW)
 ```
 
-> To allow SSH connection :
+> **To allow SSH connection :**
 
 ```sh
 sudo ufw allow ssh
 ```
 
-> To configure UFW with port 4242 :
+> **To configure UFW with port 4242 :**
 
 ```sh
 sudo ufw status numbered
