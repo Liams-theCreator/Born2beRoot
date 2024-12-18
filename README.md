@@ -126,7 +126,7 @@ imellali ALL=(ALL) ALL
 ---
 #### 3. Installing & Configuring SSH
     
-> To install ssh  :
+> **To install ssh  :**
 
 ```sh
 sudo apt install openssh-server
