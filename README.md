@@ -87,6 +87,9 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
     - You must create at least 2 encrypted partitions using LVM :
 
     ```bash
+  npm run deploy
+```
+    ```sh
         0. boot
         1. root (mandatory part)
         2. swap (mandatory part)
@@ -96,7 +99,6 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
         6. tmp (bonus part)
         7. var/log (bonus part)
     ```
-
     - You must install GRUB Boot loader in your disk !
 ---
 #### 2. Installing sudo using apt
