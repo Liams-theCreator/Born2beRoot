@@ -83,7 +83,7 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 ## 📋 Instructions :
 
 #### 1. Create Virtual Machine with VirtualBox
-> **Your hostname must be your “login” + 42 (ex: imellali42)**
+> **Your hostname must be your “login” + 42 (ex: imellali42).**
 >
 > **You must create at least 2 encrypted partitions using LVM :**
 
@@ -107,22 +107,22 @@ root@imellali42:/home/imellali# apt install sudo
 root@imellali42:/home/imellali# apt install vim
 ```
 
-> **if sudo not working :**
+> **If sudo not working :**
 
 ```sh
 root@imellali42:/home/imellali# vi /etc/sudoers
 ```
-> **then and add this to sudoers file :**
+> **Then and add this to sudoers file :**
 
 ```sh
 "your user" ALL=(ALL) ALL
 ```
 
-> **example :**
+> **Example :**
 ```sh
 imellali ALL=(ALL) ALL
 ```
-> **then save and quit , and quit su then try sudo again**
+> **Save and quit vim, Then quit su and try sudo again.**
 
 ---
 #### 3. Installing & Configuring SSH
