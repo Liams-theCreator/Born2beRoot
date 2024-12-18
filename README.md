@@ -106,7 +106,7 @@ root@imellali42:/home/imellali# apt install sudo
 root@imellali42:/home/imellali# apt install vim
 ```
 
-if sudo not working :
+> if sudo not working :
 
 ```sh
 root@imellali42:/home/imellali# vi /etc/sudoers
@@ -115,13 +115,14 @@ root@imellali42:/home/imellali# vi /etc/sudoers
 
 ```sh
 "your user" ALL=(ALL) ALL
-
-example :
-
-imellali ALL=(ALL) ALL
-
-then save and quit , and quit su then try sudo again
 ```
+
+> example :
+```sh
+imellali ALL=(ALL) ALL
+```
+then save and quit , and quit su then try sudo again
+
 ---
 #### 3. Installing & Configuring SSH
     
