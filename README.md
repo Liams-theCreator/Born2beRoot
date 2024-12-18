@@ -87,15 +87,18 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
     You must create at least 2 encrypted partitions using LVM :
 
     ```sh
-     0. boot
-     1. root (mandatory part)
-     2. swap (mandatory part)
-     3. home (mandatory part)
-     4. var (bonus part)
-     5. srv (bonus part)
-     6. tmp (bonus part)
-     7. var/log (bonus part)
+    0. boot
+    1. root (mandatory part)
+    2. swap (mandatory part)
+    3. home (mandatory part)
+    4. var (bonus part)
+    5. srv (bonus part)
+    6. tmp (bonus part)
+    7. var/log (bonus part)
     ```
+    ```sh
+sudo systemctl status cron
+```
     You must install GRUB Boot loader in your disk !
 ---
 #### 2. Installing sudo using apt
