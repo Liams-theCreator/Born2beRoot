@@ -84,6 +84,7 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 
 #### 1. Create Virtual Machine with VirtualBox
 > **Your hostname must be your “login” + 42 (ex: imellali42)**
+>
 > **You must create at least 2 encrypted partitions using LVM :**
 
 ```sh
