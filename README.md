@@ -121,7 +121,7 @@ root@imellali42:/home/imellali# vi /etc/sudoers
 ```sh
 imellali ALL=(ALL) ALL
 ```
-then save and quit , and quit su then try sudo again
+> then save and quit , and quit su then try sudo again
 
 ---
 #### 3. Installing & Configuring SSH
@@ -177,3 +177,44 @@ sudo ufw status (check if only port 4242 is there)
 ---
 #### 7. Create a simple script called [monitoring.sh](http://monitoring.sh/)
 ---
+
+## Questions Aside :
+
+<aside>
+💡
+
+What is the difference between creating new a partiition with type primary or logical ?
+
+- Use **primary partitions** for boot-related purposes and operating systems.
+- Use **logical partitions** for additional storage or non-boot-critical partitions to save primary slots.
+</aside>
+
+<aside>
+💡
+
+What is the meaning of jornaling file system (ext4, ext3) ?
+
+- A file system is a method used by an operating system to store, retrieve, and organize data on a partition. Without a file system, a partition is just raw, unstructured storage.
+- When creating a partition, the system asks you to choose a **file system** (e.g., ext4, ext3, FAT32, swap, etc.). This decision determines how data will be stored, organized, and accessed on that partition. Each file system is optimized for different purposes
+</aside>
+
+<aside>
+💡
+
+What is the meaning of mount point ?
+
+- **Mount Point**: Determines where the partition’s contents appear in the file system.
+- Assigning appropriate mount points improves organization, security, and recoverability.
+- Ensures partitions are used for their intended purpose.
+</aside>
+
+<aside>
+💡
+
+GRUB Boot loader ?
+
+GRUB is a **boot loader** that loads the operating system kernel into memory and transfers control to it.
+
+Without a boot loader, your computer wouldn’t know how to start your operating system.
+
+</aside>
