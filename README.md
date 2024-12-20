@@ -13,6 +13,9 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
  - [How to enable SSH](https://phoenixnap.com/kb/how-to-enable-ssh-on-ubuntu)
  - [How to setup UFW Firewall](https://phoenixnap.com/kb/configure-firewall-with-ufw-on-ubuntu#ftoc-heading-6)
  - [How to Add a User to a Linux Group](https://phoenixnap.com/kb/add-user-to-linux-group)
+ - [How To Set Password Policies In Linux](https://ostechnix.com/how-to-set-password-policies-in-linux/)
+ - [Useful Sudoers Configuring sudo Command in Linux](https://www.geeksforgeeks.org/useful-sudoers-configurations-for-setting-sudo-in-linux/)
+ - [TTY Command in Linux](https://www.geeksforgeeks.org/tty-command-in-linux-with-examples/)
 
 #### 💻 Videos
 - [Linux Directories Explained in 100 Seconds](https://www.youtube.com/watch?v=42iQKuQodW4)
@@ -173,8 +176,64 @@ sudo ufw status (check if only port 4242 is there)
 ```
 ---   
 #### 5. Create a new user and assign it to a group
+> **To create a new user :**
+
+```sh
+sudo adduser "username"
+```
+> **To create a new group :**
+
+```sh
+sudo addgroup "groupname"
+```
+> **To create a user to a group :**
+
+```sh
+sudo adduser "username" "groupname"
+```
+> **To check if the user is within a group:**
+
+```sh
+getent group
+```
+> **To delete a group or a user :**
+
+```sh
+sudo -r deluser "username" (-r to delete its directory in /home)
+sudo delgroup "groupname"
+```
 ---
 #### 6. Set up a strong password policy
+> **Step 1 : (Install this package to enforce password quality)**
+ 
+```sh
+sudo apt install libpam-pwquality
+```
+
+> **Step 2 :**
+
+```sh
+sudo vi /etc/login.defs
+PASS_MAX_DAYS 30 (It's the max days till password expiration)
+PASS_MIN_DAYS 2 (It's the min days till password change)
+MAX_WARN_AGE 7 (It's the days till password warning)
+```
+> **Step 3 :**
+
+```sh
+sudo vi /etc/pam.d/common-password
+minlen=10 -> The minimun characters a password must contain.
+ucredit=-1 -> The password at least have to contain a capital letter.
+lcredit=-1 -> The password at least have to contain a lowercase letter.
+dcredit=-1 -> The passworld at least have to containt a digit.
+maxrepeat=3 -> The password can not have the same character repeated three contiusly times.
+reject_username -> The password can not contain the username inside itself.
+enforce_for_root -> We will implement this password policy to root.
+
+this rule will be on seperate line (not gonna be applied on root user) :
+difok=7 -> The password it have to containt at least seven diferent characters from the last password ussed.
+```
+
 ---
 #### 7. Create a simple script called [monitoring.sh](http://monitoring.sh/)
 ---
@@ -201,3 +260,10 @@ sudo ufw status (check if only port 4242 is there)
 
     - GRUB is a **boot loader** that loads the operating system kernel into memory and transfers control to it.
     - Without a boot loader, your computer wouldn’t know how to start your operating system.
+
+- ➜ **How to change the hostname**
+
+    - To modify your hostname just use this command on your machine's terminal:
+```sh
+sudo hostnamectl set-hostname "new hostname"
+```
