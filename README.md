@@ -266,6 +266,6 @@ difok=7 -> The new password must have at least 7 different characters from the o
 - ➜ **How to change the hostname**
 
     - To modify your hostname just use this command on your machine's terminal:
-```sh
-sudo hostnamectl set-hostname "new hostname"
-```
+    ```sh
+    sudo hostnamectl set-hostname "new hostname"
+    ```
