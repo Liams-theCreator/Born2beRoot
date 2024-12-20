@@ -214,9 +214,9 @@ sudo apt install libpam-pwquality
 
 ```sh
 sudo vi /etc/login.defs
-PASS_MAX_DAYS 30 It's the max days till password expiration
-PASS_MIN_DAYS 2 It's the min days till password change
-MAX_WARN_AGE 7 It's the days till password warning
+PASS_MAX_DAYS 30 (It's the max days till password expiration)
+PASS_MIN_DAYS 2 (It's the min days till password change)
+MAX_WARN_AGE 7 (It's the days till password warning)
 ```
 > **Step 3 :**
 
