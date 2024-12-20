@@ -214,9 +214,9 @@ sudo apt install libpam-pwquality
 
 ```sh
 sudo vi /etc/login.defs
-PASS_MAX_DAYS 30 (It's the max days till password expiration)
-PASS_MIN_DAYS 2 (It's the min days till password change)
-MAX_WARN_AGE 7 (It's the days till password warning)
+PASS_MAX_DAYS 30 It's the max days till password expiration
+PASS_MIN_DAYS 2 It's the min days till password change
+MAX_WARN_AGE 7 It's the days till password warning
 ```
 > **Step 3 :**
 
@@ -230,8 +230,8 @@ maxrepeat=3 -> The password can not have the same character repeated three conti
 reject_username -> The password can not contain the username inside itself.
 enforce_for_root -> We will implement this password policy to root.
 
-this rule will be on seperate line (not gonna be applied on root user) :
-difok=7 -> The password it have to containt at least seven diferent characters from the last password ussed.
+This rule will be on seperate line (not gonna be applied on root user) :
+difok=7 -> The new password must have at least 7 different characters from the old password
 ```
 
 ---
