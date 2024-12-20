@@ -235,7 +235,9 @@ difok=7 -> The new password must have at least 7 different characters from the o
 ```
 
 ---
-#### 7. Create a simple script called [monitoring.sh](http://monitoring.sh/)
+#### 7. Set up a sudo configuration
+---
+#### 8. Create a simple script called [monitoring.sh](http://monitoring.sh/)
 ---
 
 ## Questions Aside :
