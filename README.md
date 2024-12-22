@@ -222,16 +222,16 @@ MAX_WARN_AGE 7 (It's the days till password warning)
 
 ```sh
 sudo vi /etc/pam.d/common-password
-minlen=10 -> The minimun characters a password must contain.
-ucredit=-1 -> The password at least have to contain a capital letter.
-lcredit=-1 -> The password at least have to contain a lowercase letter.
-dcredit=-1 -> The passworld at least have to containt a digit.
-maxrepeat=3 -> The password can not have the same character repeated three contiusly times.
-reject_username -> The password can not contain the username inside itself.
-enforce_for_root -> We will implement this password policy to root.
+minlen=10 (The minimun characters a password must contain)
+ucredit=-1 (The password at least have to contain a capital letter)
+lcredit=-1 (The password at least have to contain a lowercase letter)
+dcredit=-1 (The passworld at least have to containt a digit)
+maxrepeat=3 (The password can not have the same character repeated three contiusly times)
+reject_username (The password can not contain the username inside itself)
+enforce_for_root (We will implement this password policy to root)
 
 This rule will be on seperate line (not gonna be applied on root user) :
-difok=7 -> The new password must have at least 7 different characters from the old password
+difok=7 (The new password must have at least 7 different characters from the old password
 ```
 
 ---
