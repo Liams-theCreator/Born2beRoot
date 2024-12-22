@@ -245,7 +245,7 @@ Defaults	logfile="/var/log/sudo/sudo_logs.log"
 Defaults	iolog_dir="/var/log/sudo/"
 Defaults	requiretty
 Defaults	passwd_tries=3
-Defaults	badpass_message="If you know the password you dont have to guess it. Try again !"
+Defaults	badpass_message="type here your custom message"
 ```
 ---
 #### 8. Create a simple script called [monitoring.sh](http://monitoring.sh/)
