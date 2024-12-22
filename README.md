@@ -236,6 +236,17 @@ difok=7 (The new password must have at least 7 different characters from the old
 
 ---
 #### 7. Set up a sudo configuration
+> Configuration for sudo:
+```sh
+sudo vi /etc/sudoers
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults	log_input, log_output
+Defaults	logfile="/var/log/sudo/sudo_logs.log"
+Defaults	iolog_dir="/var/log/sudo/"
+Defaults	requiretty
+Defaults	passwd_tries=3
+Defaults	badpass_message="If you know the password you dont have to guess it. Try again !"
+```
 ---
 #### 8. Create a simple script called [monitoring.sh](http://monitoring.sh/)
 ---
