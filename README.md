@@ -16,6 +16,9 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
  - [How To Set Password Policies In Linux](https://ostechnix.com/how-to-set-password-policies-in-linux/)
  - [Useful Sudoers Configuring sudo Command in Linux](https://www.geeksforgeeks.org/useful-sudoers-configurations-for-setting-sudo-in-linux/)
  - [TTY Command in Linux](https://www.geeksforgeeks.org/tty-command-in-linux-with-examples/)
+ - [How to get the mac address](https://www.geeksforgeeks.org/how-to-get-the-mac-address-10-different-methods-kali-linux/)
+ - [How to Check CPU Utilization](https://phoenixnap.com/kb/check-cpu-usage-load-linux#ftoc-heading-3)
+
 
 #### 💻 Videos
 - [Linux Directories Explained in 100 Seconds](https://www.youtube.com/watch?v=42iQKuQodW4)
