@@ -248,7 +248,23 @@ Defaults	passwd_tries=3
 Defaults	badpass_message="type here your custom message"
 ```
 ---
-#### 8. Create a simple script called [monitoring.sh](http://monitoring.sh/)
+#### 8. Create a simple script called **monitoring.sh**
+> This is the script used for crontab:
+```sh
+#!/bin/bash
+echo "#Architecture:" $(uname -a)
+echo "#CPU physical :" $(nproc)
+echo "#vCPU :" $(nproc)
+echo "#Memory Usage:" $(free -m | awk 'NR==2 {printf "%d/%dMB (%.2f%%)", $3, $2, $3/$2*100}')
+echo "#Disk Usage:" $(df -m --total | awk 'END{printf "%d", $3}')$(df -h --total | awk 'END{printf "/%dGb (%d%%)", $2, $5}')
+echo "#CPU load:" $(vmstat 1 2 | tail -1 | awk '{printf "%.1f%%", 100-$15}')
+echo "#Last boot:" $(who -b | awk '{print $3" "$4}')
+echo "#LVM use:" $(lsblk | awk '{if ($6=="lvm") {print "yes";flag=1;exit} else if (flag) {print "no";exit} }')
+echo "#Connections TCP :" $(ss -t | awk 'NR > 1' | wc -l) ESTABLISHED
+echo "#User log:" $(loginctl list-sessions | awk 'END{print $1}')
+echo "#Network: IP" $(hostname -I) "("$(cat /sys/class/net/enp0s3/address)")"
+echo "#Sudo :" $(sudoreplay -l -d /var/log/sudo | wc -l) cmd
+```
 ---
 
 ## Questions Aside :
