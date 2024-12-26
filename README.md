@@ -42,7 +42,9 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 - **Type2** : which is installed on top of your operating system
 ---
 #### 🔷 What's the difference between Debian and Rocky? and If you choose one on another explain why?
+
 The main difference between community-driven and enterprise Linux distributions is their target audience and focus. Community-driven distros like Debian are created by volunteers and focus on flexibility, open-source principles, and freedom, making them great for developers and tech enthusiasts. On the other hand, enterprise distros like Rocky Linux are designed with businesses in mind, offering long-term support, stability, and professional help for critical systems. Debian is perfect for those who want control and customization, while Rocky Linux is more suited for companies that need reliable, secure, and supported systems for their operations.
+
 ---
 #### 🔷 What's a partition ? And more generally how does LVM (Logical Volume Management) work ?
 - **Partition** is a logically divided section of a physical storage device 
@@ -69,7 +71,7 @@ The main difference between community-driven and enterprise Linux distributions 
 - With **Manual partitioning**, each new disk requires extra effort to partition, format, and mount. It often leads to fragmented storage, with data scattered across multiple locations, making management more complex as the system grows.
 ---
 #### 🔷 What's sudo ?
--
+---
 #### 🔷 What's the difference between apt and aptitued ?
 - **Apt:**
 apt is a command-line tool for managing packages on Debian-based systems. It performs tasks like installing, upgrading, and removing software packages.
