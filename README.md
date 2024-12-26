@@ -42,7 +42,7 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 - **Type2** : which is installed on top of your operating system
 ---
 #### 🔷 What's the difference between Debian and Rocky? and If you choose one on another explain why?
--
+The main difference between community-driven and enterprise Linux distributions is their target audience and focus. Community-driven distros like Debian are created by volunteers and focus on flexibility, open-source principles, and freedom, making them great for developers and tech enthusiasts. On the other hand, enterprise distros like Rocky Linux are designed with businesses in mind, offering long-term support, stability, and professional help for critical systems. Debian is perfect for those who want control and customization, while Rocky Linux is more suited for companies that need reliable, secure, and supported systems for their operations.
 ---
 #### 🔷 What's a partition ? And more generally how does LVM (Logical Volume Management) work ?
 - **Partition** is a logically divided section of a physical storage device 
@@ -70,6 +70,23 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 ---
 #### 🔷 What's sudo ?
 -
+#### 🔷 What's the difference between apt and aptitued ?
+- **Apt:**
+apt is a command-line tool for managing packages on Debian-based systems. It performs tasks like installing, upgrading, and removing software packages.
+
+- **aptitude:**
+aptitude is a more advanced package management tool that extends apt's functionality. It provides a graphical interface and better handling of package dependency issues.
+ - **Package:**
+    A package is a collection of files providing specific software functionality.
+    Example: A web browser package might include its executable, libraries, configuration files, and documentation.
+
+ - **Dependency Issue:**
+    Dependencies are other software or libraries required for a program to function.
+    Example: If you're installing a video player, it might require a specific version of a codec library.
+
+- **Differences:**
+Apt: Simple and intuitive, primarily for basic tasks.
+Aptitude: Offers advanced features like resolving complex dependency issues and a GUI for ease of use.
 ---
 #### 🔷 What's SSH (Secure Shell) and what's the value of using it ?
 -
@@ -81,6 +98,18 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 -
 ---
 #### 🔷 What's APPArmor ?
+AppArmor is a security system that allows a computer administrator (Admin) to predefine operational permissions (profiles) for applications. Each application is restricted to operate within the defined permissions. If an application attempts to exceed its allowed permissions, AppArmor detects this behavior and blocks it.
+- **Admin:**
+An administrator is a user with full permissions to manage the computer.
+Example: The admin can configure permissions for an application like a web browser, limiting its access to certain files or network connections.
+- **Profile:**
+Permission/Profile:
+A profile is a set of predefined rules that specify what an application can and cannot do.
+> Example:
+> **Allowed:** Reading files in the /home/user directory.
+> **Restricted:** Writing to /etc/system files.
+**Use Case Example:**
+Suppose an email app has permission to read user emails but not access the system's kernel. If a hacker exploits the app to attempt kernel access, AppArmor detects and prevents this action.
 -
 ---
 #### 🔷 What's Cron ?
