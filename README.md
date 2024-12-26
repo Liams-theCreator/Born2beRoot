@@ -112,7 +112,7 @@ A profile is a set of predefined rules that specify what an application can and 
 > **Restricted:** Writing to /etc/system files.
 **Use Case Example:**
 Suppose an email app has permission to read user emails but not access the system's kernel. If a hacker exploits the app to attempt kernel access, AppArmor detects and prevents this action.
--
+
 ---
 #### 🔷 What's Cron ?
 -
