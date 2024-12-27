@@ -294,10 +294,10 @@ echo "#Disk Usage:" $(df -m --total | awk 'END{printf "%d", $3}')$(df -h --total
 echo "#CPU load:" $(vmstat 1 2 | tail -1 | awk '{printf "%.1f%%", 100-$15}')
 echo "#Last boot:" $(who -b | awk '{print $3" "$4}')
 echo "#LVM use:" $(lsblk | awk '{if ($6=="lvm") {print "yes";flag=1;exit} else if (flag) {print "no";exit} }')
-echo "#Connections TCP :" $(ss -t | awk 'NR > 1' | wc -l) ESTABLISHED
-echo "#User log:" $(loginctl list-sessions | awk 'END{print $1}')
-echo "#Network: IP" $(hostname -I) "("$(cat /sys/class/net/enp0s3/address)")"
-echo "#Sudo :" $(sudoreplay -l -d /var/log/sudo | wc -l) cmd
+echo "#Connections TCP :" $(ss -t state established | awk 'NR > 1' | wc -l) ESTABLISHED
+echo "#User log:" $(who | cut -d " " -f1 | sort -u | wc -l)
+echo "#Network: IP" $(hostname -I)"("$(cat /sys/class/net/enp0s3/address)")"
+echo "#Sudo :" $(journalctl -q _COMM=sudo | grep "COMMAND" | wc -l) cmd
 ```
 ---
 
