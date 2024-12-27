@@ -5,11 +5,6 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 
 ## Resources :
 #### 📘 Articles
- - [Born2beRoot (Full guide)](https://mathieu-soysal.gitbook.io/born2beroot)
- - [Gitbook Guide](https://42-cursus.gitbook.io/guide/rank-01/born2beroot)
- - [Born2beRoot Ultimate Guide](https://github.com/DevAwizard/Born2BeRoot_Guide_by_anwu-yan)
- - [How to setup your VM ?](https://github.com/Thuggonaut/42IC_Ring01_Born2beRoot/)
- - [What is ?](https://github.com/amaitou/Born2beRoot)
  - [How to enable SSH](https://phoenixnap.com/kb/how-to-enable-ssh-on-ubuntu)
  - [How to setup UFW Firewall](https://phoenixnap.com/kb/configure-firewall-with-ufw-on-ubuntu#ftoc-heading-6)
  - [How to Add a User to a Linux Group](https://phoenixnap.com/kb/add-user-to-linux-group)
@@ -27,7 +22,6 @@ This project's goal is to help you set up your `Virtual Machine` under specific 
 - [Virtualization (Part 2): How hypervisors work](https://www.youtube.com/watch?v=L0IDOQneyRE)
 - [Virtualization in Arabic](https://www.youtube.com/watch?v=3HChgNmRYJU)
 - [Introduction to LVM | Linux Academy](https://www.youtube.com/watch?v=dMHFArkANP8&list=PLAoA-usw1t-4sIlwNXKS2RIn0ZBx4VQhn)
-- [Born2beRoot : Installation and partitioning](https://www.youtube.com/watch?v=73r3JbkCVy0)
 
 ## ⚠️ Need to know :
 
