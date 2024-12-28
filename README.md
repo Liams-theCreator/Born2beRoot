@@ -65,7 +65,9 @@ The main difference between community-driven and enterprise Linux distributions 
 - With **Manual partitioning**, each new disk requires extra effort to partition, format, and mount. It often leads to fragmented storage, with data scattered across multiple locations, making management more complex as the system grows.
 ---
 #### 🔷 What's sudo ?
+
 **sudo** (short for superuser do) is a command in Unix-like operating systems (like Linux and macOS) that allows a permitted user to execute a command with the privileges of a superuser (root user) or another user. This is particularly useful because many system-level operations require administrative (root) permissions that a regular user does not have by default.
+
 ---
 #### 🔷 What's the difference between apt and aptitued ?
 - **Apt:**
