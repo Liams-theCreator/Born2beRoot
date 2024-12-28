@@ -118,8 +118,8 @@ Suppose an email app has permission to read user emails but not access the syste
 ---
 #### 🔷 What's Cron ?
 **Cron** is a time-based job scheduler in Unix-like operating systems (such as Linux and macOS). It allows users to run commands, scripts, or programs at specific intervals or times automatically. For example, you can schedule tasks to run daily, weekly, monthly, or even every minute.
-
 It is widely used for automating repetitive tasks such as backups, system monitoring, updates, and sending notifications.
+
 ---
 ## 📋 Instructions :
 
