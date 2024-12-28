@@ -65,6 +65,7 @@ The main difference between community-driven and enterprise Linux distributions 
 - With **Manual partitioning**, each new disk requires extra effort to partition, format, and mount. It often leads to fragmented storage, with data scattered across multiple locations, making management more complex as the system grows.
 ---
 #### 🔷 What's sudo ?
+**sudo** (short for superuser do) is a command in Unix-like operating systems (like Linux and macOS) that allows a permitted user to execute a command with the privileges of a superuser (root user) or another user. This is particularly useful because many system-level operations require administrative (root) permissions that a regular user does not have by default.
 ---
 #### 🔷 What's the difference between apt and aptitued ?
 - **Apt:**
@@ -85,13 +86,18 @@ Apt: Simple and intuitive, primarily for basic tasks.
 Aptitude: Offers advanced features like resolving complex dependency issues and a GUI for ease of use.
 ---
 #### 🔷 What's SSH (Secure Shell) and what's the value of using it ?
--
+**SSH** (Secure Shell) is a network protocol used to securely connect to and manage remote machines over a network It is primarily used for logging into remote systems and executing commands, but it can also be used for file transfer and tunneling network traffic.
+
+ - **Port**: By default, SSH listens on port 22, but you can change the port for added security or to avoid conflicts with other services.
+
+ - **Encryption**: SSH encrypts the entire session, ensuring that any data transmitted between the client and server is secure and cannot be easily intercepted.
 ---
 #### 🔷 What's an UFW (Uncomplicated Firewall) and what's the value of using it ?
--
----
-#### 🔷 What's the advantages/disadvantages of a strong password policy ? What can you say about its implementation ?
--
+A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between your computer or network and potential threats from external networks, such as the internet.
+> **For example:** when you allow port 22, it means you are opening your system to accept incoming traffic on port 22, which is the default for SSH (Secure Shell).
+>
+> It works by creating rules that either allow or deny traffic based on ports, IP addresses, and protocols (such as TCP or UDP).
+
 ---
 #### 🔷 What's APPArmor ?
 AppArmor is a security system that allows a computer administrator (Admin) to predefine operational permissions (profiles) for applications. Each application is restricted to operate within the defined permissions. If an application attempts to exceed its allowed permissions, AppArmor detects this behavior and blocks it.
@@ -109,7 +115,9 @@ Suppose an email app has permission to read user emails but not access the syste
 
 ---
 #### 🔷 What's Cron ?
--
+**Cron** is a time-based job scheduler in Unix-like operating systems (such as Linux and macOS). It allows users to run commands, scripts, or programs at specific intervals or times automatically. For example, you can schedule tasks to run daily, weekly, monthly, or even every minute.
+
+It is widely used for automating repetitive tasks such as backups, system monitoring, updates, and sending notifications.
 ---
 ## 📋 Instructions :
 
